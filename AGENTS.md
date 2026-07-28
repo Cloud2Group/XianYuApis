@@ -26,6 +26,7 @@
 - 原生 App 研究默认使用一次性测试副本和只读探针；真实收发验证前先记录回调、参数和错误码。
 - 每完成一个研究阶段，更新 `CONTEXT.md`、`xianyu_app/docs/` 或 `xianyu_app/research/` 中对应记录。
 - 每个会话结束前按 `docs/DOCUMENTATION_GOVERNANCE.md` 同步决策、事实、验证结果和下一步。
+- 用户未指定其他目标时，默认执行 `CONTEXT.md` 中的“当前唯一下一任务”；完成后由 Agent 选择并写入新的下一任务。
 
 ## 常用入口
 
