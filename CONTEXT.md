@@ -16,7 +16,7 @@
 - 已确认账号状态拆分：`account_lifecycle_state` 表示托管关系，`runtime_state` 表示 Worker、连接和认证健康，见 `docs/api/SESSION_RUNTIME_V1.md` 与 `ADR-0025`。
 - 已确认 Headless Worker 边界：Worker 只负责单账号 App 原生连接与调用；Account Runtime 持有队列、同步、Operation 和账本，见 `docs/HEADLESS_WORKER.md` 与 `ADR-0026`。
 - 已确认文档治理规则：每个会话结束时同步专题文档、`CONTEXT.md`、必要时的 `PROJECT_MAP.md` 和 ADR，见 `docs/DOCUMENTATION_GOVERNANCE.md` 与 `ADR-0027`。
-- 根目录重组已经形成正式 Git 提交；README 导航、忽略规则和工作区移动结果已复核，本地重新克隆验证通过。
+- 根目录重组已经形成正式 Git 提交并推送到 `Cloud2Group/XianYuApis` 的 `master`；README 导航、忽略规则和工作区移动结果已复核，重新克隆验证通过。`origin` 继续指向上游 `cv-cat/XianYuApis`，本地 `master` 跟踪 `fork/master`。
 - L1 产品领域模型和能力地图已经建立，见 `docs/DOMAIN_MODEL.md` 与 `docs/CAPABILITY_MAP.md`。
 - L2 总体架构已经建立初稿，见 `docs/ARCHITECTURE.md`；第一阶段部署确定为单台 Mac、单个账号、私有 API、本地 DB 和 Native Bridge。
 - L3 总路线已经建立，见 `docs/ROADMAP.md`；Attached App 单账号 IM → 标准 API/代表性能力 → Headless App Worker → 多 Runtime。
