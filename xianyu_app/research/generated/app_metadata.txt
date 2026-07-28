@@ -1,0 +1,10 @@
+generated_at=2026-07-26 05:15:29 +0800
+outer_app=/Applications/闲鱼.app
+runner_app=/Applications/闲鱼.app/Wrapper/Runner.app
+binary=/Applications/闲鱼.app/Wrapper/Runner.app/Runner
+bundle_id=com.taobao.fleamarket
+version=7.27.30
+build=56437047
+architecture=/Applications/闲鱼.app/Wrapper/Runner.app/Runner: Mach-O 64-bit executable arm64
+binary_size=170263600
+binary_sha256=930af66d0580ac8c8e8c578e0fe56aecbc108affbbb976873d51bb5a3b5f4a0e

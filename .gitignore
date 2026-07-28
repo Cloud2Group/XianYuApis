@@ -1,5 +1,8 @@
-__pycache__
-*node_modules/*
+__pycache__/
+*.py[cod]
+node_modules/
+.vite/
+*.DS_Store
 *.so
 .Python
 build/
@@ -31,3 +34,23 @@ venv.bak/
 test.py
 test1.py
 test2.py
+exports/
+xianyu_web/exports/
+xianyu_web/runtime/
+.xianyu_cookie
+.xianyu_auth.json
+*.cookie
+xianyu_web/chat_reader/src/chat_data.json
+
+# Local editor/session metadata
+.cursor/
+.specstory/
+.vscode/
+.cursorindexingignore
+.env.*
+!.env.example
+
+# App-native local environment and raw reverse-engineering artifacts
+xianyu_app/docs/ENVIRONMENT.local.md
+xianyu_app/research/raw/
+xianyu_app/research/runtime/

@@ -1,0 +1,1597 @@
+##         name           0x1077c64ed AIMPubMsgReference
+        baseMethods    0x108ca4630
+            entsize 24
+            count   16
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105422ebc
+            name    0x10728e430 initWithSender:appCid:mid:createdAt:referenceContent:extension:
+            types   0x1077f1bf6 @64@0:8@16@24@32q40@48@56
+            imp     0x105422ef8
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x1054231a8
+            name    0x10764ffcb sender
+            types   0x1077e03cb @16@0:8
+            imp     0x10542334c
+            name    0x1076dab41 setSender:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105423354
+            name    0x1074795c6 appCid
+            types   0x1077e03cb @16@0:8
+            imp     0x105423360
+            name    0x1076590a0 setAppCid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105423368
+            name    0x107297edb mid
+            types   0x1077e03cb @16@0:8
+            imp     0x105423374
+            name    0x1072b37f1 setMid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542337c
+            name    0x1074d00e2 createdAt
+            types   0x1077e050b q16@0:8
+            imp     0x105423388
+            name    0x107670382 setCreatedAt:
+            types   0x1077e049c v24@0:8q16
+            imp     0x105423390
+            name    0x107612a7b referenceContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105423398
+            name    0x1076ce93c setReferenceContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054233a0
+            name    0x10750be86 extension
+            types   0x1077e03cb @16@0:8
+            imp     0x1054233ac
+            name    0x107685d6b setExtension:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054233b4
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x1054233c0
+        baseProtocols  0x0
+        ivars          0x108ca47b8
+            entsize   32
+            count     6
+            offset    0x109118e28 8
+            name      0x10726c67d _sender
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109118e2c 16
+            name      0x1072dc5a8 _appCid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109118e30 24
+            name      0x10741f9ea _mid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109118e34 32
+            name      0x1073e7a5c _createdAt
+            type      0x1077e0551 q
+            alignment 3
+            size      8
+            offset    0x109118e38 40
+            name      0x107436fda _referenceContent
+            type      0x10785ef68 @"AIMPubMsgReferenceContent"
+            alignment 3
+            size      8
+            offset    0x109118e3c 48
+            name      0x1073fa02c _extension
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108ca4880
+            entsize    16
+            count      6
+            name       0x10764ffcb sender
+            attributes 0x1072aeec7 T@"NSString",&,N,V_sender
+            name       0x1074795c6 appCid
+            attributes 0x10732c6b0 T@"NSString",&,N,V_appCid
+            name       0x107297edb mid
+            attributes 0x1072ac34c T@"NSString",&,N,V_mid
+            name       0x1074d00e2 createdAt
+            attributes 0x1073ba38c Tq,N,V_createdAt
+            name       0x107612a7b referenceContent
+            attributes 0x1072e392d T@"AIMPubMsgReferenceContent",&,N,V_referenceContent
+            name       0x10750be86 extension
+            attributes 0x10730dc42 T@"NSDictionary",&,N,V_extension
+Meta Class
+
+##         name           0x1077c64ed AIMPubMsgReference
+        baseMethods    0x108ca45c8
+            entsize 24
+            count   1
+            name    0x1072c9e06 AIMPubMsgReferenceWithSender:appCid:mid:createdAt:referenceContent:extension:
+            types   0x1077f1bf6 @64@0:8@16@24@32q40@48@56
+            imp     0x10542309c
+        baseProtocols  0x0
+        ivars          0x0
+        weakIvarLayout 0x0
+        baseProperties 0x0
+000000010816be10 0x1092ce108
+    isa        0x1092ce130
+    superclass 0x0 _OBJC_CLASS_$_NSObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x108ca4bf0
+        flags          0x194 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   48
+        reserved       0x0
+        ivarLayout     0x10776ec84
+        layout map     0x04
+        name           0x1077c6500 AIMPubLiteMessage
+        baseMethods    0x108ca4998
+            entsize 24
+            count   14
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105423414
+            name    0x1075634a3 initWithAppCid:mid:localid:content:createdAt:
+            types   0x10780c27a @56@0:8@16@24@32@40q48
+            imp     0x105423454
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x105423694
+            name    0x1074795c6 appCid
+            types   0x1077e03cb @16@0:8
+            imp     0x105423804
+            name    0x1076590a0 setAppCid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542380c
+            name    0x107297edb mid
+            types   0x1077e03cb @16@0:8
+            imp     0x105423818
+            name    0x1072b37f1 setMid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105423820
+            name    0x10731a3b4 localid
+            types   0x1077e03cb @16@0:8
+            imp     0x10542382c
+            name    0x1076ab651 setLocalid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105423834
+            name    0x107302963 content
+            types   0x1077e03cb @16@0:8
+            imp     0x105423840
+            name    0x10766e120 setContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105423848
+            name    0x1074d00e2 createdAt
+            types   0x1077e050b q16@0:8
+            imp     0x105423854
+            name    0x107670382 setCreatedAt:
+            types   0x1077e049c v24@0:8q16
+            imp     0x10542385c
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x105423864
+        baseProtocols  0x0
+        ivars          0x108ca4af0
+            entsize   32
+            count     5
+            offset    0x109118e40 8
+            name      0x1072dc5a8 _appCid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109118e44 16
+            name      0x10741f9ea _mid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109118e48 24
+            name      0x107419a9d _localid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109118e4c 32
+            name      0x1073e5c18 _content
+            type      0x10785ef85 @"AIMPubMsgContent"
+            alignment 3
+            size      8
+            offset    0x109118e50 40
+            name      0x1073e7a5c _createdAt
+            type      0x1077e0551 q
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108ca4b98
+            entsize    16
+            count      5
+            name       0x1074795c6 appCid
+            attributes 0x10732c6b0 T@"NSString",&,N,V_appCid
+            name       0x107297edb mid
+            attributes 0x1072ac34c T@"NSString",&,N,V_mid
+            name       0x10731a3b4 localid
+            attributes 0x1072abca6 T@"NSString",&,N,V_localid
+            name       0x107302963 content
+            attributes 0x1072e3875 T@"AIMPubMsgContent",&,N,V_content
+            name       0x1074d00e2 createdAt
+            attributes 0x1073ba38c Tq,N,V_createdAt
+Meta Class
+
+##         name           0x1077c6631 AIMPubMsgContent
+        baseMethods    0x108ca6608
+            entsize 24
+            count   26
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105425c6c
+            name    0x10756630b initWithContentType:textContent:imageContent:audioContent:videoContent:geoContent:customContent:structContent:fileContent:replyContent:combineForwardContent:
+            types   0x10785efdc @104@0:8q16@24@32@40@48@56@64@72@80@88@96
+            imp     0x105425cac
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x1054260b8
+            name    0x1074c3b2a contentType
+            types   0x1077e050b q16@0:8
+            imp     0x1054263c8
+            name    0x1073312e7 setContentType:
+            types   0x1077e049c v24@0:8q16
+            imp     0x1054263d0
+            name    0x107731919 textContent
+            types   0x1077e03cb @16@0:8
+            imp     0x1054263d8
+            name    0x1072ba90b setTextContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054263e0
+            name    0x10755b5c7 imageContent
+            types   0x1077e03cb @16@0:8
+            imp     0x1054263ec
+            name    0x1076957f2 setImageContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054263f4
+            name    0x107484821 audioContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105426400
+            name    0x10765c06e setAudioContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105426408
+            name    0x10775e0f6 videoContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105426414
+            name    0x1076f9d69 setVideoContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542641c
+            name    0x107525d38 geoContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105426428
+            name    0x10768de79 setGeoContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105426430
+            name    0x1074d8431 customContent
+            types   0x1077e03cb @16@0:8
+            imp     0x10542643c
+            name    0x10767366d setCustomContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105426444
+            name    0x10772272b structContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105426450
+            name    0x1076e5c8b setStructContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105426458
+            name    0x107511cdc fileContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105426464
+            name    0x1072aeae4 setFileContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542646c
+            name    0x107628b68 replyContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105426478
+            name    0x1076d0ce5 setReplyContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105426480
+            name    0x1074b6bf4 combineForwardContent
+            types   0x1077e03cb @16@0:8
+            imp     0x10542648c
+            name    0x10766b708 setCombineForwardContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105426494
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x1054264a0
+        baseProtocols  0x0
+        ivars          0x108ca6880
+            entsize   32
+            count     11
+            offset    0x109118ed0 8
+            name      0x1073e5f61 _contentType
+            type      0x1077e0551 q
+            alignment 3
+            size      8
+            offset    0x109118ed4 16
+            name      0x1074500da _textContent
+            type      0x10785f006 @"AIMPubMsgTextContent"
+            alignment 3
+            size      8
+            offset    0x109118ed8 24
+            name      0x107407ba3 _imageContent
+            type      0x10785f01e @"AIMMsgImageContent"
+            alignment 3
+            size      8
+            offset    0x109118edc 32
+            name      0x1073d7902 _audioContent
+            type      0x10785f034 @"AIMMsgAudioContent"
+            alignment 3
+            size      8
+            offset    0x109118ee0 40
+            name      0x10745be6d _videoContent
+            type      0x10785f04a @"AIMMsgVideoContent"
+            alignment 3
+            size      8
+            offset    0x109118ee4 48
+            name      0x107400866 _geoContent
+            type      0x10785f060 @"AIMMsgGeoContent"
+            alignment 3
+            size      8
+            offset    0x109118ee8 56
+            name      0x1073ea438 _customContent
+            type      0x10785f074 @"AIMMsgCustomContent"
+            alignment 3
+            size      8
+            offset    0x109118eec 64
+            name      0x10744bbea _structContent
+            type      0x10785f08b @"AIMPubMsgStructContent"
+            alignment 3
+            size      8
+            offset    0x109118ef0 72
+            name      0x1073fb896 _fileContent
+            type      0x10785f0a5 @"AIMMsgFileContent"
+            alignment 3
+            size      8
+            offset    0x109118ef4 80
+            name      0x1074398eb _replyContent
+            type      0x10785f0ba @"AIMPubMsgReplyContent"
+            alignment 3
+            size      8
+            offset    0x109118ef8 88
+            name      0x1073e378f _combineForwardContent
+            type      0x10785f0d3 @"AIMPubMsgCombineForwardContent"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108ca69e8
+            entsize    16
+            count      11
+            name       0x1074c3b2a contentType
+            attributes 0x1073ba0d0 Tq,N,V_contentType
+            name       0x107731919 textContent
+            attributes 0x10725e4e9 T@"AIMPubMsgTextContent",&,N,V_textContent
+            name       0x10755b5c7 imageContent
+            attributes 0x1072e37a9 T@"AIMMsgImageContent",&,N,V_imageContent
+            name       0x107484821 audioContent
+            attributes 0x1072e3727 T@"AIMMsgAudioContent",&,N,V_audioContent
+            name       0x10775e0f6 videoContent
+            attributes 0x1072e37e3 T@"AIMMsgVideoContent",&,N,V_videoContent
+            name       0x107525d38 geoContent
+            attributes 0x10725e26a T@"AIMMsgGeoContent",&,N,V_geoContent
+            name       0x1074d8431 customContent
+            attributes 0x10725e22e T@"AIMMsgCustomContent",&,N,V_customContent
+            name       0x10772272b structContent
+            attributes 0x1072e39a3 T@"AIMPubMsgStructContent",&,N,V_structContent
+            name       0x107511cdc fileContent
+            attributes 0x1072e3771 T@"AIMMsgFileContent",&,N,V_fileContent
+            name       0x107628b68 replyContent
+            attributes 0x10725e440 T@"AIMPubMsgReplyContent",&,N,V_replyContent
+            name       0x1074b6bf4 combineForwardContent
+            attributes 0x10725e33d T@"AIMPubMsgCombineForwardContent",&,N,V_combineForwardContent
+Meta Class
+
+##         name           0x1077c6631 AIMPubMsgContent
+        baseMethods    0x108ca65a0
+            entsize 24
+            count   1
+            name    0x107244988 AIMPubMsgContentWithContentType:textContent:imageContent:audioContent:videoContent:geoContent:customContent:structContent:fileContent:replyContent:combineForwardContent:
+            types   0x10785efdc @104@0:8q16@24@32@40@48@56@64@72@80@88@96
+            imp     0x105425efc
+        baseProtocols  0x0
+        ivars          0x0
+        weakIvarLayout 0x0
+        baseProperties 0x0
+000000010816be80 0x1092ce568
+    isa        0x1092ce590
+    superclass 0x0 _OBJC_CLASS_$_NSObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x108ca6ce8
+        flags          0x194 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   32
+        reserved       0x0
+        ivarLayout     0x10776e9d9
+        layout map     0x03
+        name           0x1077c6642 AIMPubGroupMemberUpdateNick
+        baseMethods    0x108ca6b50
+            entsize 24
+            count   10
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105426530
+            name    0x1075637f7 initWithAppCid:uid:nick:
+            types   0x1077e0cce @40@0:8@16@24@32
+            imp     0x105426564
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x105426734
+            name    0x1074795c6 appCid
+            types   0x1077e03cb @16@0:8
+            imp     0x10542682c
+            name    0x1076590a0 setAppCid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105426834
+            name    0x10734972f uid
+            types   0x1077e03cb @16@0:8
+            imp     0x105426840
+            name    0x107340b35 setUid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105426848
+            name    0x1075c9b77 nick
+            types   0x1077e03cb @16@0:8
+            imp     0x105426854
+            name    0x1076ba097 setNick:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542685c
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x105426868
+        baseProtocols  0x0
+        ivars          0x108ca6c48
+            entsize   32
+            count     3
+            offset    0x109118efc 8
+            name      0x1072dc5a8 _appCid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109118f00 16
+            name      0x107456312 _uid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109118f04 24
+            name      0x107425541 _nick
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108ca6cb0
+            entsize    16
+            count      3
+            name       0x1074795c6 appCid
+            attributes 0x10732c6b0 T@"NSString",&,N,V_appCid
+            name       0x10734972f uid
+            attributes 0x107335cce T@"NSString",&,N,V_uid
+            name       0x1075c9b77 nick
+            attributes 0x107331cdb T@"NSString",&,N,V_nick
+Meta Class
+
+##         name           0x1077c6820 AIMPubMsgReplyContent
+        baseMethods    0x108caac38
+            entsize 24
+            count   8
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x10542c698
+            name    0x1075715b5 initWithReferenceMsg:replyContent:
+            types   0x1077e0a82 @32@0:8@16@24
+            imp     0x10542c6cc
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x10542c814
+            name    0x107612ace referenceMsg
+            types   0x1077e03cb @16@0:8
+            imp     0x10542c8dc
+            name    0x1076ce975 setReferenceMsg:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542c8e4
+            name    0x107628b68 replyContent
+            types   0x1077e03cb @16@0:8
+            imp     0x10542c8f0
+            name    0x1076d0ce5 setReplyContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542c8f8
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x10542c904
+        baseProtocols  0x0
+        ivars          0x108caad00
+            entsize   32
+            count     2
+            offset    0x1091190b0 8
+            name      0x107437007 _referenceMsg
+            type      0x10785f266 @"AIMPubMsgReference"
+            alignment 3
+            size      8
+            offset    0x1091190b4 16
+            name      0x1074398eb _replyContent
+            type      0x10785f27c @"AIMPubMsgInnerReplyContent"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108caad48
+            entsize    16
+            count      2
+            name       0x107612ace referenceMsg
+            attributes 0x10725e406 T@"AIMPubMsgReference",&,N,V_referenceMsg
+            name       0x107628b68 replyContent
+            attributes 0x10725e3c4 T@"AIMPubMsgInnerReplyContent",&,N,V_replyContent
+Meta Class
+
+##         name           0x1077c6820 AIMPubMsgReplyContent
+        baseMethods    0x108caabd0
+            entsize 24
+            count   1
+            name    0x107244b82 AIMPubMsgReplyContentWithReferenceMsg:replyContent:
+            types   0x1077e0a82 @32@0:8@16@24
+            imp     0x10542c78c
+        baseProtocols  0x0
+        ivars          0x0
+        weakIvarLayout 0x0
+        baseProperties 0x0
+000000010816bf30 0x1092cec48
+    isa        0x1092cec70
+    superclass 0x0 _OBJC_CLASS_$_NSObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x108cab018
+        flags          0x194 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   40
+        reserved       0x0
+        ivarLayout     0x10776f05e
+        layout map     0x13
+        name           0x1077c6836 AIMPubMsgRecallFeature
+        baseMethods    0x108caae20
+            entsize 24
+            count   12
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x10542c934
+            name    0x10756f853 initWithOperatorType:code:operatorUid:extension:
+            types   0x1077f744f @48@0:8q16@24@32@40
+            imp     0x10542c974
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x10542cb5c
+            name    0x1075de7f1 operatorType
+            types   0x1077e050b q16@0:8
+            imp     0x10542cc9c
+            name    0x1076be335 setOperatorType:
+            types   0x1077e049c v24@0:8q16
+            imp     0x10542cca4
+            name    0x1074b37f7 code
+            types   0x1077e03cb @16@0:8
+            imp     0x10542ccac
+            name    0x10766ad39 setCode:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542ccb4
+            name    0x1075de7fe operatorUid
+            types   0x1077e03cb @16@0:8
+            imp     0x10542ccc0
+            name    0x10733a1e3 setOperatorUid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542ccc8
+            name    0x10750be86 extension
+            types   0x1077e03cb @16@0:8
+            imp     0x10542ccd4
+            name    0x107685d6b setExtension:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10542ccdc
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x10542cce8
+        baseProtocols  0x0
+        ivars          0x108caaf48
+            entsize   32
+            count     4
+            offset    0x1091190b8 8
+            name      0x107428917 _operatorType
+            type      0x1077e0551 q
+            alignment 3
+            size      8
+            offset    0x1091190bc 16
+            name      0x1073e2fa8 _code
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x1091190c0 24
+            name      0x107428925 _operatorUid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x1091190c4 32
+            name      0x1073fa02c _extension
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108caafd0
+            entsize    16
+            count      4
+            name       0x1075de7f1 operatorType
+            attributes 0x1073be931 Tq,N,V_operatorType
+            name       0x1074b37f7 code
+            attributes 0x1072a8635 T@"NSString",&,N,V_code
+            name       0x1075de7fe operatorUid
+            attributes 0x107332090 T@"NSString",&,N,V_operatorUid
+            name       0x10750be86 extension
+            attributes 0x10730dc42 T@"NSDictionary",&,N,V_extension
+Meta Class
+
+##         name           0x1077c69a8 AIMPubMsgSendReplyMessage
+        baseMethods    0x108cae5a8
+            entsize 24
+            count   18
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105431adc
+            name    0x107563630 initWithAppCid:referenceMid:replyContent:receivers:extension:localExtension:callbackCtx:
+            types   0x1077ee4cf @72@0:8@16@24@32@40@48@56@64
+            imp     0x105431b10
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x105431e78
+            name    0x1074795c6 appCid
+            types   0x1077e03cb @16@0:8
+            imp     0x105432038
+            name    0x1076590a0 setAppCid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105432040
+            name    0x107612ac1 referenceMid
+            types   0x1077e03cb @16@0:8
+            imp     0x10543204c
+            name    0x1076ce964 setReferenceMid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105432054
+            name    0x107628b68 replyContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105432060
+            name    0x1076d0ce5 setReplyContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105432068
+            name    0x10760f943 receivers
+            types   0x1077e03cb @16@0:8
+            imp     0x105432074
+            name    0x1076cd8e7 setReceivers:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10543207c
+            name    0x10750be86 extension
+            types   0x1077e03cb @16@0:8
+            imp     0x105432088
+            name    0x107685d6b setExtension:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105432090
+            name    0x1075a5035 localExtension
+            types   0x1077e03cb @16@0:8
+            imp     0x10543209c
+            name    0x1076ab1bb setLocalExtension:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054320a4
+            name    0x10749f79c callbackCtx
+            types   0x1077e03cb @16@0:8
+            imp     0x1054320b0
+            name    0x1073303fd setCallbackCtx:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054320b8
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x1054320c4
+        baseProtocols  0x0
+        ivars          0x108cae760
+            entsize   32
+            count     7
+            offset    0x109119244 8
+            name      0x1072dc5a8 _appCid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109119248 16
+            name      0x107436ff9 _referenceMid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x10911924c 24
+            name      0x1074398eb _replyContent
+            type      0x10785ef85 @"AIMPubMsgContent"
+            alignment 3
+            size      8
+            offset    0x109119250 32
+            name      0x1074360e4 _receivers
+            type      0x1077e0905 @"NSArray"
+            alignment 3
+            size      8
+            offset    0x109119254 40
+            name      0x1073fa02c _extension
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+            offset    0x109119258 48
+            name      0x1072e9cfa _localExtension
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+            offset    0x10911925c 56
+            name      0x1073df13f _callbackCtx
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108cae848
+            entsize    16
+            count      7
+            name       0x1074795c6 appCid
+            attributes 0x10732c6b0 T@"NSString",&,N,V_appCid
+            name       0x107612ac1 referenceMid
+            attributes 0x1072ce6c5 T@"NSString",&,N,V_referenceMid
+            name       0x107628b68 replyContent
+            attributes 0x10725e38c T@"AIMPubMsgContent",&,N,V_replyContent
+            name       0x10760f943 receivers
+            attributes 0x10727f115 T@"NSArray",&,N,V_receivers
+            name       0x10750be86 extension
+            attributes 0x10730dc42 T@"NSDictionary",&,N,V_extension
+            name       0x1075a5035 localExtension
+            attributes 0x10730e879 T@"NSDictionary",&,N,V_localExtension
+            name       0x10749f79c callbackCtx
+            attributes 0x107287856 T@"NSDictionary",&,N,V_callbackCtx
+Meta Class
+
+##         name           0x1077c69a8 AIMPubMsgSendReplyMessage
+        baseMethods    0x108cae540
+            entsize 24
+            count   1
+            name    0x1072c9eb9 AIMPubMsgSendReplyMessageWithAppCid:referenceMid:replyContent:receivers:extension:localExtension:callbackCtx:
+            types   0x1077ee4cf @72@0:8@16@24@32@40@48@56@64
+            imp     0x105431d24
+        baseProtocols  0x0
+        ivars          0x0
+        weakIvarLayout 0x0
+        baseProperties 0x0
+000000010816bfb8 0x1092cf198
+    isa        0x1092cf1c0
+    superclass 0x0 _OBJC_CLASS_$_NSObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x108caeaa8
+        flags          0x194 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   24
+        reserved       0x0
+        ivarLayout     0x10776e9c1
+        layout map     0x02
+        name           0x1077c69c2 AIMPubGroupUpdateAnnouncement
+        baseMethods    0x108cae970
+            entsize 24
+            count   8
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105432130
+            name    0x1075632fc initWithAppCid:announcement:
+            types   0x1077e0a82 @32@0:8@16@24
+            imp     0x105432164
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x1054322cc
+            name    0x1074795c6 appCid
+            types   0x1077e03cb @16@0:8
+            imp     0x105432394
+            name    0x1076590a0 setAppCid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10543239c
+            name    0x107477db8 announcement
+            types   0x1077e03cb @16@0:8
+            imp     0x1054323a8
+            name    0x10765890f setAnnouncement:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054323b0
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x1054323bc
+        baseProtocols  0x0
+        ivars          0x108caea38
+            entsize   32
+            count     2
+            offset    0x109119260 8
+            name      0x1072dc5a8 _appCid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109119264 16
+            name      0x1073d4d79 _announcement
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108caea80
+            entsize    16
+            count      2
+            name       0x1074795c6 appCid
+            attributes 0x10732c6b0 T@"NSString",&,N,V_appCid
+            name       0x107477db8 announcement
+            attributes 0x10724890e T@"NSString",&,N,V_announcement
+Meta Class
+
+##         name           0x1077c6ac5 AIMPubMsgSendMessage
+        baseMethods    0x108cb0160
+            entsize 24
+            count   18
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x1054344e4
+            name    0x10756336e initWithAppCid:content:receivers:extension:localExtension:callbackCtx:customLocalid:
+            types   0x1077ee4cf @72@0:8@16@24@32@40@48@56@64
+            imp     0x105434518
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x105434880
+            name    0x1074795c6 appCid
+            types   0x1077e03cb @16@0:8
+            imp     0x105434a40
+            name    0x1076590a0 setAppCid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434a48
+            name    0x107302963 content
+            types   0x1077e03cb @16@0:8
+            imp     0x105434a54
+            name    0x10766e120 setContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434a5c
+            name    0x10760f943 receivers
+            types   0x1077e03cb @16@0:8
+            imp     0x105434a68
+            name    0x1076cd8e7 setReceivers:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434a70
+            name    0x10750be86 extension
+            types   0x1077e03cb @16@0:8
+            imp     0x105434a7c
+            name    0x107685d6b setExtension:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434a84
+            name    0x1075a5035 localExtension
+            types   0x1077e03cb @16@0:8
+            imp     0x105434a90
+            name    0x1076ab1bb setLocalExtension:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434a98
+            name    0x10749f79c callbackCtx
+            types   0x1077e03cb @16@0:8
+            imp     0x105434aa4
+            name    0x1073303fd setCallbackCtx:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434aac
+            name    0x1074d8a15 customLocalid
+            types   0x1077e03cb @16@0:8
+            imp     0x105434ab8
+            name    0x107673bb3 setCustomLocalid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434ac0
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x105434acc
+        baseProtocols  0x0
+        ivars          0x108cb0318
+            entsize   32
+            count     7
+            offset    0x1091192e4 8
+            name      0x1072dc5a8 _appCid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x1091192e8 16
+            name      0x1073e5c18 _content
+            type      0x10785ef85 @"AIMPubMsgContent"
+            alignment 3
+            size      8
+            offset    0x1091192ec 24
+            name      0x1074360e4 _receivers
+            type      0x1077e0905 @"NSArray"
+            alignment 3
+            size      8
+            offset    0x1091192f0 32
+            name      0x1073fa02c _extension
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+            offset    0x1091192f4 40
+            name      0x1072e9cfa _localExtension
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+            offset    0x1091192f8 48
+            name      0x1073df13f _callbackCtx
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+            offset    0x1091192fc 56
+            name      0x1073ea7de _customLocalid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108cb0400
+            entsize    16
+            count      7
+            name       0x1074795c6 appCid
+            attributes 0x10732c6b0 T@"NSString",&,N,V_appCid
+            name       0x107302963 content
+            attributes 0x1072e3875 T@"AIMPubMsgContent",&,N,V_content
+            name       0x10760f943 receivers
+            attributes 0x10727f115 T@"NSArray",&,N,V_receivers
+            name       0x10750be86 extension
+            attributes 0x10730dc42 T@"NSDictionary",&,N,V_extension
+            name       0x1075a5035 localExtension
+            attributes 0x10730e879 T@"NSDictionary",&,N,V_localExtension
+            name       0x10749f79c callbackCtx
+            attributes 0x107287856 T@"NSDictionary",&,N,V_callbackCtx
+            name       0x1074d8a15 customLocalid
+            attributes 0x10732e2d7 T@"NSString",&,N,V_customLocalid
+Meta Class
+
+##         name           0x1077c6ac5 AIMPubMsgSendMessage
+        baseMethods    0x108cb00f8
+            entsize 24
+            count   1
+            name    0x107244bba AIMPubMsgSendMessageWithAppCid:content:receivers:extension:localExtension:callbackCtx:customLocalid:
+            types   0x1077ee4cf @72@0:8@16@24@32@40@48@56@64
+            imp     0x10543472c
+        baseProtocols  0x0
+        ivars          0x0
+        weakIvarLayout 0x0
+        baseProperties 0x0
+000000010816c010 0x1092cf508
+    isa        0x1092cf530
+    superclass 0x0 _OBJC_CLASS_$_NSObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x108cb06c0
+        flags          0x194 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   32
+        reserved       0x0
+        ivarLayout     0x10776e9d9
+        layout map     0x03
+        name           0x1077c6ada AIMPubMsgReSendMessage
+        baseMethods    0x108cb0528
+            entsize 24
+            count   10
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105434b38
+            name    0x1075633d8 initWithAppCid:localid:callbackCtx:
+            types   0x1077e0cce @40@0:8@16@24@32
+            imp     0x105434b6c
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x105434d3c
+            name    0x1074795c6 appCid
+            types   0x1077e03cb @16@0:8
+            imp     0x105434e34
+            name    0x1076590a0 setAppCid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434e3c
+            name    0x10731a3b4 localid
+            types   0x1077e03cb @16@0:8
+            imp     0x105434e48
+            name    0x1076ab651 setLocalid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434e50
+            name    0x10749f79c callbackCtx
+            types   0x1077e03cb @16@0:8
+            imp     0x105434e5c
+            name    0x1073303fd setCallbackCtx:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105434e64
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x105434e70
+        baseProtocols  0x0
+        ivars          0x108cb0620
+            entsize   32
+            count     3
+            offset    0x109119300 8
+            name      0x1072dc5a8 _appCid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109119304 16
+            name      0x107419a9d _localid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109119308 24
+            name      0x1073df13f _callbackCtx
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108cb0688
+            entsize    16
+            count      3
+            name       0x1074795c6 appCid
+            attributes 0x10732c6b0 T@"NSString",&,N,V_appCid
+            name       0x10731a3b4 localid
+            attributes 0x1072abca6 T@"NSString",&,N,V_localid
+            name       0x10749f79c callbackCtx
+            attributes 0x107287856 T@"NSDictionary",&,N,V_callbackCtx
+Meta Class
+
+##         name           0x1077c6b1c AIMPubMsgSimpleContent
+        baseMethods    0x108cb0ba0
+            entsize 24
+            count   20
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105435410
+            name    0x107574846 initWithTextContent:imageContent:audioContent:videoContent:geoContent:customContent:structContent:fileContent:
+            types   0x1077ff6f1 @80@0:8@16@24@32@40@48@56@64@72
+            imp     0x105435444
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x105435790
+            name    0x107731919 textContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105435998
+            name    0x1072ba90b setTextContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054359a0
+            name    0x10755b5c7 imageContent
+            types   0x1077e03cb @16@0:8
+            imp     0x1054359ac
+            name    0x1076957f2 setImageContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054359b4
+            name    0x107484821 audioContent
+            types   0x1077e03cb @16@0:8
+            imp     0x1054359c0
+            name    0x10765c06e setAudioContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054359c8
+            name    0x10775e0f6 videoContent
+            types   0x1077e03cb @16@0:8
+            imp     0x1054359d4
+            name    0x1076f9d69 setVideoContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054359dc
+            name    0x107525d38 geoContent
+            types   0x1077e03cb @16@0:8
+            imp     0x1054359e8
+            name    0x10768de79 setGeoContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x1054359f0
+            name    0x1074d8431 customContent
+            types   0x1077e03cb @16@0:8
+            imp     0x1054359fc
+            name    0x10767366d setCustomContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105435a04
+            name    0x10772272b structContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105435a10
+            name    0x1076e5c8b setStructContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105435a18
+            name    0x107511cdc fileContent
+            types   0x1077e03cb @16@0:8
+            imp     0x105435a24
+            name    0x1072aeae4 setFileContent:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105435a2c
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x105435a38
+        baseProtocols  0x0
+        ivars          0x108cb0d88
+            entsize   32
+            count     8
+            offset    0x109119320 8
+            name      0x1074500da _textContent
+            type      0x10785f006 @"AIMPubMsgTextContent"
+            alignment 3
+            size      8
+            offset    0x109119324 16
+            name      0x107407ba3 _imageContent
+            type      0x10785f01e @"AIMMsgImageContent"
+            alignment 3
+            size      8
+            offset    0x109119328 24
+            name      0x1073d7902 _audioContent
+            type      0x10785f034 @"AIMMsgAudioContent"
+            alignment 3
+            size      8
+            offset    0x10911932c 32
+            name      0x10745be6d _videoContent
+            type      0x10785f04a @"AIMMsgVideoContent"
+            alignment 3
+            size      8
+            offset    0x109119330 40
+            name      0x107400866 _geoContent
+            type      0x10785f060 @"AIMMsgGeoContent"
+            alignment 3
+            size      8
+            offset    0x109119334 48
+            name      0x1073ea438 _customContent
+            type      0x10785f074 @"AIMMsgCustomContent"
+            alignment 3
+            size      8
+            offset    0x109119338 56
+            name      0x10744bbea _structContent
+            type      0x10785f08b @"AIMPubMsgStructContent"
+            alignment 3
+            size      8
+            offset    0x10911933c 64
+            name      0x1073fb896 _fileContent
+            type      0x10785f0a5 @"AIMMsgFileContent"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108cb0e90
+            entsize    16
+            count      8
+            name       0x107731919 textContent
+            attributes 0x10725e4e9 T@"AIMPubMsgTextContent",&,N,V_textContent
+            name       0x10755b5c7 imageContent
+            attributes 0x1072e37a9 T@"AIMMsgImageContent",&,N,V_imageContent
+            name       0x107484821 audioContent
+            attributes 0x1072e3727 T@"AIMMsgAudioContent",&,N,V_audioContent
+            name       0x10775e0f6 videoContent
+            attributes 0x1072e37e3 T@"AIMMsgVideoContent",&,N,V_videoContent
+            name       0x107525d38 geoContent
+            attributes 0x10725e26a T@"AIMMsgGeoContent",&,N,V_geoContent
+            name       0x1074d8431 customContent
+            attributes 0x10725e22e T@"AIMMsgCustomContent",&,N,V_customContent
+            name       0x10772272b structContent
+            attributes 0x1072e39a3 T@"AIMPubMsgStructContent",&,N,V_structContent
+            name       0x107511cdc fileContent
+            attributes 0x1072e3771 T@"AIMMsgFileContent",&,N,V_fileContent
+Meta Class
+
+##         name           0x1077c6b1c AIMPubMsgSimpleContent
+        baseMethods    0x108cb0b38
+            entsize 24
+            count   1
+            name    0x107244c23 AIMPubMsgSimpleContentWithTextContent:imageContent:audioContent:videoContent:geoContent:customContent:structContent:fileContent:
+            types   0x1077ff6f1 @80@0:8@16@24@32@40@48@56@64@72
+            imp     0x105435618
+        baseProtocols  0x0
+        ivars          0x0
+        weakIvarLayout 0x0
+        baseProperties 0x0
+000000010816c030 0x1092cf648
+    isa        0x1092cf670
+    superclass 0x0 _OBJC_CLASS_$_NSObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x108cb1160
+        flags          0x194 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   32
+        reserved       0x0
+        ivarLayout     0x10776e9d9
+        layout map     0x03
+        name           0x1077c6b33 AIMPubSearchConversationResult
+        baseMethods    0x108cb0fc8
+            entsize 24
+            count   10
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105435ab0
+            name    0x1075667b5 initWithConversation:firstMessage:ranges:
+            types   0x1077e0cce @40@0:8@16@24@32
+            imp     0x105435ae4
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x105435ca0
+            name    0x1074c519b conversation
+            types   0x1077e03cb @16@0:8
+            imp     0x105435d98
+            name    0x10766f0c1 setConversation:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105435da0
+            name    0x1075174dc firstMessage
+            types   0x1077e03cb @16@0:8
+            imp     0x105435dac
+            name    0x1076893df setFirstMessage:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105435db4
+            name    0x10760ba22 ranges
+            types   0x1077e03cb @16@0:8
+            imp     0x105435dc0
+            name    0x1076cc9d1 setRanges:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105435dc8
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x105435dd4
+        baseProtocols  0x0
+        ivars          0x108cb10c0
+            entsize   32
+            count     3
+            offset    0x109119340 8
+            name      0x1073e6616 _conversation
+            type      0x10785f3e0 @"AIMPubConversation"
+            alignment 3
+            size      8
+            offset    0x109119344 16
+            name      0x1073fce4c _firstMessage
+            type      0x10785efcb @"AIMPubMessage"
+            alignment 3
+            size      8
+            offset    0x109119348 24
+            name      0x107269f58 _ranges
+            type      0x1077e0905 @"NSArray"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108cb1128
+            entsize    16
+            count      3
+            name       0x1074c519b conversation
+            attributes 0x10725e2d6 T@"AIMPubConversation",&,N,V_conversation
+            name       0x1075174dc firstMessage
+            attributes 0x10725e308 T@"AIMPubMessage",&,N,V_firstMessage
+            name       0x10760ba22 ranges
+            attributes 0x10727f0c1 T@"NSArray",&,N,V_ranges
+Meta Class
+
+##         name           0x1077c6b52 AIMPubMsgTextContent
+        baseMethods    0x108cb1210
+            entsize 24
+            count   10
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105435e10
+            name    0x1075746c7 initWithText:encryptedText:extension:
+            types   0x1077e0cce @40@0:8@16@24@32
+            imp     0x105435e44
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x105436014
+            name    0x107731753 text
+            types   0x1077e03cb @16@0:8
+            imp     0x10543610c
+            name    0x1076eb820 setText:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105436114
+            name    0x107501967 encryptedText
+            types   0x1077e03cb @16@0:8
+            imp     0x105436120
+            name    0x10768285a setEncryptedText:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105436128
+            name    0x10750be86 extension
+            types   0x1077e03cb @16@0:8
+            imp     0x105436134
+            name    0x107685d6b setExtension:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10543613c
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x105436148
+        baseProtocols  0x0
+        ivars          0x108cb1308
+            entsize   32
+            count     3
+            offset    0x10911934c 8
+            name      0x10744fff2 _text
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109119350 16
+            name      0x1073f74cb _encryptedText
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+            offset    0x109119354 24
+            name      0x1073fa02c _extension
+            type      0x1077e1191 @"NSDictionary"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108cb1370
+            entsize    16
+            count      3
+            name       0x107731753 text
+            attributes 0x1072b01ea T@"NSString",&,N,V_text
+            name       0x107501967 encryptedText
+            attributes 0x1072a9c93 T@"NSString",&,N,V_encryptedText
+            name       0x10750be86 extension
+            attributes 0x10730dc42 T@"NSDictionary",&,N,V_extension
+Meta Class
+
+##         name           0x1077c6b52 AIMPubMsgTextContent
+        baseMethods    0x108cb11a8
+            entsize 24
+            count   1
+            name    0x1072c9fa8 AIMPubMsgTextContentWithText:encryptedText:extension:
+            types   0x1077e0cce @40@0:8@16@24@32
+            imp     0x105435f68
+        baseProtocols  0x0
+        ivars          0x0
+        weakIvarLayout 0x0
+        baseProperties 0x0
+000000010816c040 0x1092cf6e8
+    isa        0x1092cf710
+    superclass 0x0 _OBJC_CLASS_$_NSObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x108cb1530
+        flags          0x194 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   16
+        reserved       0x0
+        ivarLayout     0x10776ea49
+        layout map     0x01
+        name           0x1077c6b67 AIMPubGroupLeave
+        baseMethods    0x108cb1458
+            entsize 24
+            count   6
+            name    0x10755fccb init
+            types   0x1077e03cb @16@0:8
+            imp     0x105436184
+            name    0x107312ac8 initWithAppCid:
+            types   0x1077e0567 @24@0:8@16
+            imp     0x1054361b8
+            name    0x1074e3ad8 description
+            types   0x1077e03cb @16@0:8
+            imp     0x1054362b8
+            name    0x1074795c6 appCid
+            types   0x1077e03cb @16@0:8
+            imp     0x10543634c
+            name    0x1076590a0 setAppCid:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x105436354
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x105436360
+        baseProtocols  0x0
+        ivars          0x108cb14f0
+            entsize   32
+            count     1
+            offset    0x109119358 8
+            name      0x1072dc5a8 _appCid
+            type      0x1077e0538 @"NSString"
+            alignment 3
+            size      8
+        weakIvarLayout 0x0
+        baseProperties 0x108cb1518
+            entsize    16
+            count      1
+            name       0x1074795c6 appCid
+            attributes 0x10732c6b0 T@"NSString",&,N,V_appCid
+Meta Class
+
+##         name           0x1077c6c73 AIMPubMsgService
+        baseMethods    0x108cb3130
+            entsize 24
+            count   52
+            name    0x107566911 initWithCpp:
+            types   0x1077e0d84 @24@0:8r^v16
+            imp     0x10545cf88
+            name    0x10759f052 listPreviousLocalMsgs:cursor:count:listener:
+            types   0x10785f70f v44@0:8@16q24i32@36
+            imp     0x10545cfe0
+            name    0x10759f07f listPreviousLocalMsgsWithBlock:cursor:count:onSuccess:onFailure:
+            types   0x10785f723 v52@0:8@16q24i32@?36@?44
+            imp     0x10545d0f4
+            name    0x10759ef67 listNextLocalMsgs:cursor:count:listener:
+            types   0x10785f70f v44@0:8@16q24i32@36
+            imp     0x10545d3f4
+            name    0x10759ef90 listNextLocalMsgsWithBlock:cursor:count:onSuccess:onFailure:
+            types   0x10785f723 v52@0:8@16q24i32@?36@?44
+            imp     0x10545d508
+            name    0x10759efcd listNextMsgs:cursor:count:listener:
+            types   0x10785f70f v44@0:8@16q24i32@36
+            imp     0x10545d808
+            name    0x10759eff1 listNextMsgsWithBlock:cursor:count:onSuccess:onFailure:
+            types   0x10785f723 v52@0:8@16q24i32@?36@?44
+            imp     0x10545d91c
+            name    0x10759f0ef listPreviousMsgs:cursor:count:listener:
+            types   0x10785f70f v44@0:8@16q24i32@36
+            imp     0x10545dc1c
+            name    0x10759f117 listPreviousMsgsWithBlock:cursor:count:onSuccess:onFailure:
+            types   0x10785f723 v52@0:8@16q24i32@?36@?44
+            imp     0x10545dd30
+            name    0x10764dbec sendMessage:listener:userData:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x10545e030
+            name    0x10764df2f sendMessageWithBlock:onProgress:onSuccess:onFailure:userData:
+            types   0x10785fb80 v56@0:8@16@?24@?32@?40@48
+            imp     0x10545e244
+            name    0x1076329d8 resendMessage:listener:userData:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x10545e6dc
+            name    0x1072a55dd resendMessageWithBlock:onProgress:onSuccess:onFailure:userData:
+            types   0x10785fb80 v56@0:8@16@?24@?32@?40@48
+            imp     0x10545e840
+            name    0x10764deb6 sendMessageTolocal:listener:
+            types   0x1077e0480 v32@0:8@16@24
+            imp     0x10545eca8
+            name    0x10764ded3 sendMessageTolocalWithBlock:onSuccess:onFailure:
+            types   0x1077e185f v40@0:8@16@?24@?32
+            imp     0x10545ede4
+            name    0x1075374bb getMessage:mid:listener:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x10545f114
+            name    0x107537576 getMessageWithBlock:mid:onSuccess:onFailure:
+            types   0x1077e19c3 v48@0:8@16@24@?32@?40
+            imp     0x10545f268
+            name    0x107535e5b getLocalMessage:localId:listener:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x10545f5a8
+            name    0x107535e7d getLocalMessageWithBlock:localId:onSuccess:onFailure:
+            types   0x1077e19c3 v48@0:8@16@24@?32@?40
+            imp     0x10545f6fc
+            name    0x107535eb3 getLocalMessages:cursor:count:forward:filter:listener:
+            types   0x10785fb9a v56@0:8@16q24i32B36@40@48
+            imp     0x10545fa3c
+            name    0x107535eea getLocalMessagesWithBlock:cursor:count:forward:filter:onSuccess:onFailure:
+            types   0x10785fbb4 v64@0:8@16q24i32B36@40@?48@?56
+            imp     0x10545fba8
+            name    0x1074e2613 deleteMessage:mids:listener:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x10545ff00
+            name    0x1074e2630 deleteMessageWithBlock:mids:onSuccess:onFailure:
+            types   0x1077e19c3 v48@0:8@16@24@?32@?40
+            imp     0x105460044
+            name    0x1074e249f deleteLocalMessage:localIds:listener:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x105460374
+            name    0x1074e24c5 deleteLocalMessageWithBlock:localIds:onSuccess:onFailure:
+            types   0x1077e19c3 v48@0:8@16@24@?32@?40
+            imp     0x1054604b8
+            name    0x10760ef25 recallMessage:mid:listener:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x1054607e8
+            name    0x10760ef41 recallMessageWithBlock:mid:onSuccess:onFailure:
+            types   0x1077e19c3 v48@0:8@16@24@?32@?40
+            imp     0x10546093c
+            name    0x10774c0e6 updateLocalExtension:listener:
+            types   0x1077e0480 v32@0:8@16@24
+            imp     0x105460c7c
+            name    0x10774c235 updateLocalExtensionWithBlock:onSuccess:onFailure:
+            types   0x1077e185f v40@0:8@16@?24@?32
+            imp     0x105460fc4
+            name    0x10774c12d updateLocalExtensionByKey:listener:
+            types   0x1077e0480 v32@0:8@16@24
+            imp     0x10546129c
+            name    0x10774c151 updateLocalExtensionByKeyWithBlock:onSuccess:onFailure:
+            types   0x1077e185f v40@0:8@16@?24@?32
+            imp     0x105461388
+            name    0x10774c28c updateLocalMessagesBizInfo:listener:
+            types   0x1077e0480 v32@0:8@16@24
+            imp     0x105461660
+            name    0x10774c2b1 updateLocalMessagesBizInfoWithBlock:onSuccess:onFailure:
+            types   0x1077e185f v40@0:8@16@?24@?32
+            imp     0x1054619c4
+            name    0x10759eed6 listMessagesReadStatus:mid:listener:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x105461c9c
+            name    0x10759eefb listMessagesReadStatusWithBlock:mid:onSuccess:onFailure:
+            types   0x1077e19c3 v48@0:8@16@24@?32@?40
+            imp     0x105461df0
+            name    0x10774c8b6 updateMessageToRead:mids:
+            types   0x1077e0480 v32@0:8@16@24
+            imp     0x105462130
+            name    0x107524678 generateMsgLocalId
+            types   0x1077e050b q16@0:8
+            imp     0x1054621fc
+            name    0x1072f8952 addMsgListener:
+            types   0x1077e03d3 B24@0:8@16
+            imp     0x10546220c
+            name    0x107622281 removeMsgListener:
+            types   0x1077e03d3 B24@0:8@16
+            imp     0x1054622a4
+            name    0x10761e984 removeAllMsgListener
+            types   0x1077e0478 v16@0:8
+            imp     0x10546233c
+            name    0x10746b1a5 addMsgChangeListener:
+            types   0x1077e03d3 B24@0:8@16
+            imp     0x10546234c
+            name    0x107622268 removeMsgChangeListener:
+            types   0x1077e03d3 B24@0:8@16
+            imp     0x1054623e4
+            name    0x10761e969 removeAllMsgChangeListener
+            types   0x1077e0478 v16@0:8
+            imp     0x10546247c
+            name    0x1073297c1 replyMessage:listener:userData:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x10546248c
+            name    0x107628bda replyMessageWithBlock:onProgress:onSuccess:onFailure:userData:
+            types   0x10785fb80 v56@0:8@16@?24@?32@?40@48
+            imp     0x10546269c
+            name    0x10751ea09 forwardMessage:listener:userData:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x105462b34
+            name    0x10751ea2b forwardMessageWithBlock:onSuccess:onFailure:userData:
+            types   0x107828b38 v48@0:8@16@?24@?32@40
+            imp     0x105462d1c
+            name    0x1074b6c0a combineForwardMessage:listener:userData:
+            types   0x1077e05ee v40@0:8@16@24@32
+            imp     0x105463094
+            name    0x1074b6c33 combineForwardMessageWithBlock:onSuccess:onFailure:userData:
+            types   0x107828b38 v48@0:8@16@?24@?32@40
+            imp     0x105463214
+            name    0x1076b8138 setNeedReceivers:
+            types   0x1077e04a7 v20@0:8B16
+            imp     0x10546358c
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x1054635cc
+            name    0x1072c8d30 .cxx_construct
+            types   0x1077e03cb @16@0:8
+            imp     0x1054635d4
+        baseProtocols  0x0
+        ivars          0x108cb3618
+            entsize   32
+            count     1
+            offset    0x1091193b0 8
+            name      0x1073e73b1 _cppRefHandle
+            type      0x10785fbd3 {Handle<std::shared_ptr<alibaba::dps::AIMPubMsgService>, std::shared_ptr<alibaba::dps::AIMPubMsgService>>="m_cache"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>="__ptr_"^{Pimpl}"__cntrl_"^{__shared_weak_count}}"m_obj"{shared_ptr<alibaba::dps::AIMPubMsgService>="__ptr_"^{AIMPubMsgService}"__cntrl_"^{__shared_weak_count}}}
+            alignment 3
+            size      32
+        weakIvarLayout 0x0
+        baseProperties 0x0
+Meta Class
+
+##         name           0x1077c6c73 AIMPubMsgService
+        baseMethods    0x0
+        baseProtocols  0x0
+        ivars          0x0
+        weakIvarLayout 0x0
+        baseProperties 0x0
+000000010816c0a8 0x1092cfaf8
+    isa        0x1092cfb20
+    superclass 0x0 _OBJC_CLASS_$_NSObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x0
+    data       0x108cb37a8
+        flags          0x94 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   40
+        reserved       0x0
+        ivarLayout     0x0
+        name           0x1077c6c84 AIMPubMsgHookPreSendMsgListener
+        baseMethods    0x108cb36d0
+            entsize 24
+            count   7
+            name    0x107566911 initWithCpp:
+            types   0x1077e0d84 @24@0:8r^v16
+            imp     0x10546a078
+            name    0x1073212cc onStart
+            types   0x1077e0478 v16@0:8
+            imp     0x10546a0d0
+            name    0x1075d655c onProgress:
+            types   0x1077e0d6c v24@0:8d16
+            imp     0x10546a0e0
+            name    0x1075d8bfd onSuccess:saveToLocal:
+            types   0x1077e19d9 v28@0:8@16B24
+            imp     0x10546a0f0
+            name    0x1075d2d81 onFailure:
+            types   0x1077e04f4 v24@0:8@16
+            imp     0x10546a1dc
+            name    0x1072c8d4f .cxx_destruct
+            types   0x1077e0478 v16@0:8
+            imp     0x10546a2a0
+            name    0x1072c8d30 .cxx_construct
+            types   0x1077e03cb @16@0:8
+            imp     0x10546a2a8
+        baseProtocols  0x0
+        ivars          0x108cb3780
+            entsize   32
+            count     1
+            offset    0x1091193b4 8
+            name      0x1073e73b1 _cppRefHandle
+            type      0x10785fd2c {Handle<std::shared_ptr<alibaba::dps::AIMPubMsgHookPreSendMsgListener>, std::shared_ptr<alibaba::dps::AIMPubMsgHookPreSendMsgListener>>="m_cache"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>="__ptr_"^{Pimpl}"__cntrl_"^{__shared_weak_count}}"m_obj"{shared_ptr<alibaba::dps::AIMPubMsgHookPreSendMsgListener>="__ptr_"^{AIMPubMsgHookPreSendMsgListener}"__cntrl_"^{__shared_weak_count}}}
+            alignment 3
+            size      32
+        weakIvarLayout 0x0
+        baseProperties 0x0
+Meta Class

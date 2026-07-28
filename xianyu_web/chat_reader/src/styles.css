@@ -1,0 +1,324 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+.reader-layout {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh !important;
+  max-height: 100vh;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.reader-main-layout {
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.reader-sider {
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 0;
+  overflow: hidden;
+  border-right: 1px solid #e8e8e8;
+}
+
+.reader-sider .ant-layout-sider-children {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.reader-sider-inner {
+  display: flex;
+  height: 100%;
+  max-height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+  background: #fff;
+}
+
+.reader-overview-collapse {
+  flex: 0 0 auto;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+}
+
+.reader-overview-collapse > .ant-collapse-item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.reader-overview-collapse .ant-collapse-header {
+  align-items: center !important;
+  padding: 16px 20px 13px !important;
+}
+
+.reader-overview-collapse .ant-collapse-content-box {
+  padding: 0 0 12px !important;
+}
+
+.reader-collapse-label {
+  display: grid;
+  gap: 3px;
+}
+
+.reader-collapse-label .ant-typography:last-child {
+  font-family: Georgia, "Songti SC", serif;
+  font-size: 20px;
+}
+
+.reader-brand {
+  padding: 0 22px 14px;
+}
+
+.reader-brand .ant-typography {
+  margin: 0;
+}
+
+.reader-eyebrow {
+  color: #c9573b !important;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+.reader-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 0 18px 14px;
+}
+
+.reader-stats .ant-card-body {
+  padding: 10px 12px;
+}
+
+.reader-stats .ant-statistic-title {
+  margin-bottom: 3px;
+}
+
+.reader-stats .ant-statistic-content {
+  font-size: 22px;
+}
+
+.reader-controls {
+  display: grid;
+  gap: 8px;
+  padding: 0 18px 12px;
+}
+
+.reader-select {
+  width: 100%;
+}
+
+.reader-list-summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 22px 8px;
+  font-size: 12px;
+}
+
+.reader-list-viewport {
+  flex: 1 1 0;
+  height: 0;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 8px 12px;
+}
+
+.conversation-item {
+  display: block;
+  padding: 0 !important;
+  margin: 2px 0;
+  cursor: pointer;
+  border: 0 !important;
+  border-radius: 10px;
+}
+
+.conversation-item:hover,
+.conversation-item-active {
+  background: #f4ece6;
+}
+
+.conversation-main {
+  width: 100%;
+  padding: 11px 12px;
+}
+
+.conversation-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.conversation-time {
+  flex: none;
+  font-size: 11px;
+}
+
+.conversation-preview {
+  display: block;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.conversation-foot {
+  font-size: 11px;
+}
+
+.reader-header {
+  display: flex;
+  flex: 0 0 auto;
+  height: auto;
+  min-height: 78px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 24px;
+  line-height: normal;
+  background: rgba(255, 255, 255, .92);
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.reader-header-title {
+  min-width: 0;
+}
+
+.reader-header-title h3 {
+  overflow: hidden;
+  margin: 0 0 4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reader-header .ant-input {
+  width: 190px;
+}
+
+.reader-content {
+  flex: 1 1 0;
+  height: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f5f2ed, #f5f8f7);
+}
+
+.reader-message-viewport {
+  height: 100%;
+  max-height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 24px clamp(12px, 4vw, 70px) 40px;
+}
+
+.message-list-item {
+  display: block !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.message-row {
+  display: flex;
+  padding: 6px 0;
+}
+
+.message-row-out {
+  justify-content: flex-end;
+}
+
+.message-card {
+  width: fit-content;
+  max-width: min(760px, 88%);
+  border-radius: 14px 14px 14px 4px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, .04);
+}
+
+.message-card-out {
+  background: #e1f2ea;
+  border-color: #c5e4d8;
+  border-radius: 14px 14px 4px 14px;
+}
+
+.message-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+  font-size: 11px;
+}
+
+.message-meta .ant-tag {
+  margin-inline-end: 0;
+  font-size: 10px;
+}
+
+.message-text {
+  margin-bottom: 0 !important;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.message-images {
+  margin-top: 10px;
+}
+
+.message-images .ant-image {
+  max-width: 180px;
+}
+
+.message-images img {
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.day-divider {
+  padding: 13px 0 5px;
+  color: #8c8c8c;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .reader-layout {
+    position: fixed;
+    height: 100vh !important;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .reader-sider {
+    height: 46vh;
+    max-height: 46vh;
+  }
+
+  .reader-main-layout {
+    height: 54vh;
+    max-height: 54vh;
+    min-height: 0;
+  }
+
+  .reader-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .reader-header .ant-space {
+    width: 100%;
+  }
+}

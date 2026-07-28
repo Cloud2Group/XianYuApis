@@ -1,0 +1,7 @@
+requests
+urllib3<2
+loguru
+websockets
+PyExecJS
+pydantic>=2
+qrcode
