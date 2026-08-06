@@ -167,6 +167,7 @@ mtop.idle.trade.order.render.url.get
 mtop.idle.user.app.icon.wearing.check
 mtop.idle.user.page.my.adapter
 mtop.idle.user.page.setting
+mtop.idle.user.setting.save
 mtop.idle.user.setting.sync
 mtop.idle.x.message.sid.report
 mtop.idlefish.uiauto.upload
@@ -354,7 +355,6 @@ mtop.taobao.idle.division.by.gps
 mtop.taobao.idle.division.getbyid
 mtop.taobao.idle.essay.delete
 mtop.taobao.idle.fast.markdown
-mtop.taobao.idle.fci.get.token
 mtop.taobao.idle.fci.model.download
 mtop.taobao.idle.fci.recommend.reason.population.check
 mtop.taobao.idle.filter.hitnum.get

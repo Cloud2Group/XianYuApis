@@ -9,7 +9,8 @@
 3. [`docs/IM_BRIDGE.md`](docs/IM_BRIDGE.md)：Python 与 App 的事件/命令契约。
 4. [`docs/AUTH_HEADLESS.md`](docs/AUTH_HEADLESS.md)：登录态、设备态和后续 Headless 方向。
 5. [`docs/ROADMAP.md`](docs/ROADMAP.md)：单账号里程碑和验证顺序。
-6. [`docs/ENVIRONMENT.local.md`](docs/ENVIRONMENT.local.md)：本机私有环境快照（Git 忽略）。
+6. [`docs/APP_UPDATE_7.27.50.md`](docs/APP_UPDATE_7.27.50.md)：当前版本与上一版的兼容性结论。
+7. [`docs/ENVIRONMENT.local.md`](docs/ENVIRONMENT.local.md)：本机私有环境快照（Git 忽略）。
 
 ## 目录
 

@@ -1,6 +1,6 @@
 # XianYuApis 当前上下文
 
-更新时间：2026-07-28
+更新时间：2026-08-06
 
 ## 顶层设计状态
 
@@ -21,6 +21,8 @@
 - L2 总体架构已经建立初稿，见 `docs/ARCHITECTURE.md`；第一阶段部署确定为单台 Mac、单个账号、私有 API、本地 DB 和 Native Bridge。
 - L3 总路线已经建立，见 `docs/ROADMAP.md`；Attached App 单账号 IM → 标准 API/代表性能力 → Headless App Worker → 多 Runtime。
 - 顶层设计下一步：L0-L4 设计已收口，进入 Milestone 1 的真实 Attached App 动态验证。
+- 闲鱼 App 已更新到 7.27.50；静态兼容性检查已完成，结论见
+  `xianyu_app/docs/APP_UPDATE_7.27.50.md`。
 
 ## 项目目标
 
@@ -33,25 +35,24 @@
 ## 当前唯一下一任务
 
 - **任务编号**：`M1-APP-IM-OBSERVE-01`
-- **任务名称**：Attached App 原生 IM 第一轮只读动态验证
-- **为什么现在做**：顶层设计、桥 POC 和仓库结构已经收口；进入标准 API 实现前，需要先取得真实 AIM 回调对象、发送参数、结果时序和权限条件。
+- **任务名称**：Attached App 原生 IM（7.27.50）动态验证
+- **为什么现在做**：7.27.50 的静态入口和本地 Bridge 已确认可复用；进入标准 API 实现前，还需要取得真实 AIM 回调对象、发送参数、结果时序和权限条件。
 - **是否需要产品确认**：否。这是当前路线图已经确认的技术验证任务。
 
 ### 目标和范围
 
-1. 刷新本机 App、进程、签名、权限和数据库环境快照；
-2. 运行现有 Native Bridge 回归测试；
-3. 确认可插桩测试副本及当前 Frida attach 条件；
-4. 枚举 `AIMPubMsgListener`、send、reply 和已读相关入口；
-5. 记录真实回调参数、对象字段、时序、错误码和阻塞条件；
-6. 原生发送调用保持关闭，本轮只做动态观察和证据记录。
+1. 保持 7.27.50 的本机 App、进程、签名、权限和数据库环境快照；
+2. 在具备调试权限的测试副本上确认 Frida attach 条件；
+3. 枚举 `AIMPubMsgListener`、send、reply 和已读相关入口；
+4. 记录真实回调参数、对象字段、时序、错误码和阻塞条件；
+5. 原生发送调用保持关闭，直到人工发送参数完成记录。
 
 ### 完成标准
 
-- 环境快照和测试结果已记录；
+- 7.27.50 静态兼容性报告、环境快照和 Bridge 测试结果已记录；
 - listener/send/reply 的动态可见性得到明确结论；
 - 能观察到的真实字段进入 `xianyu_app/docs/` 或研究记录；
-- 权限阻塞存在时，记录精确阻塞点和下一次恢复动作；
+- 权限阻塞存在时，记录精确阻塞点和恢复动作；
 - `CONTEXT.md` 更新本任务结果，并由 Agent 生成新的唯一下一任务。
 
 ### 新会话一句话指令
@@ -88,11 +89,22 @@
 
 - 安装路径：`/Applications/闲鱼.app`
 - Bundle ID：`com.taobao.fleamarket`
-- 当前版本：`7.27.30`（Build `56437047`）
+- 当前版本：`7.27.50`（Build `56832643`）
+- 上一版基线：`7.27.30`（Build `56437047`）
 - 主二进制：`Wrapper/Runner.app/Runner`
 - 技术形态：Flutter AOT + Objective-C/C++ Alibaba AIM/ACCS 组件 + MTop
 - AIM 网络字符串包含 `tls-goofish.dingtalk.com` 和 `PNM`
 - 可复现证据位于 `xianyu_app/research/generated/`
+
+### 7.27.50 兼容性检查
+
+- AIM 关键类、选择子、参数类型编码和字段布局与 7.27.30 基线保持一致；二进制地址发生版本位移，桥代码不依赖旧地址。
+- AIM 静态字符串、类清单、动作清单、链接库、entitlements 和网络端点报告保持一致。
+- MTop 目录仅发现一项新增 `mtop.idle.user.setting.save` 和一项移除
+  `mtop.taobao.idle.fci.get.token`；IM/会话相关名称未见变化。
+- `watch_db.py` 已在当前本机识别 `Message` 与 `PMessage` 两套备用库；AIM 主库仍为 `CipherDB` 加密库。
+- Bridge 回归测试 `5/5` 通过。
+- 完整记录见 `xianyu_app/docs/APP_UPDATE_7.27.50.md`。
 
 ### 原生 IM 入口
 
@@ -136,8 +148,8 @@ AIMPubMsgSendReplyMessage initWithAppCid:referenceMid:replyContent:receivers:ext
 
 | 项目 | 状态 |
 | --- | --- |
-| App 静态分析和入口整理 | 已完成第一轮 |
-| 明文备用库只读监听 | POC 已完成 |
+| App 静态分析和入口整理 | 7.27.50 静态兼容性已完成 |
+| 明文备用库只读监听 | 7.27.50 schema 扫描通过 |
 | AIM 加密库直接读取 | 暂不作为主路线 |
 | 原生收消息回调注册 | 待动态插桩验证 |
 | 原生文字发送/回复 | 待端到端验证 |
@@ -155,8 +167,9 @@ AIMPubMsgSendReplyMessage initWithAppCid:referenceMid:replyContent:receivers:ext
 `xianyu_app/docs/ENVIRONMENT.local.md`。公开说明见
 `xianyu_app/docs/ENVIRONMENT.md`。
 
-动态插桩摘要：原始 Runner 在 iOS-on-Mac/RunningBoard 环境中运行；直接 Frida
-attach 目前会被 task-for-pid 权限拦截，原始 `/Applications/闲鱼.app` 保持原样。
+动态插桩摘要：7.27.50 Runner 在 iOS-on-Mac/RunningBoard 环境中运行；当前 PID 可启动，
+但直接 Frida attach 仍被 task-for-pid 权限拦截（SIP enabled、Developer Mode disabled、
+`get-task-allow` absent）。原始 `/Applications/闲鱼.app` 保持原样。
 `native_aim_bridge.js` 和 `frida_adapter.py` 默认处于观察模式，真实发送调用开关保持关闭。
 
 ## 本轮整理结果
@@ -164,15 +177,16 @@ attach 目前会被 task-for-pid 权限拦截，原始 `/Applications/闲鱼.app
 - 资料入口固定为 `AGENTS.md` → `docs/PROJECT_CHARTER.md` → `docs/WORKING_AGREEMENT.md` → `CONTEXT.md` → `docs/PROJECT_MAP.md`。
 - 根目录已完成物理收口，业务实现只位于 `xianyu_app/` 与 `xianyu_web/`。
 - App 端入口固定为 `xianyu_app/README.md` → `docs/REVERSE_ENGINEERING.md` →
-  `docs/IM_BRIDGE.md` → `docs/ROADMAP.md`。
+  `docs/IM_BRIDGE.md` → `docs/APP_UPDATE_7.27.50.md` → `docs/ROADMAP.md`。
 - 公开静态证据放在 `xianyu_app/research/generated/`；原始大文件、运行日志、账号和
   环境快照均放在 Git 忽略路径，不混入代码提交。
 - 桥 POC 已通过本地合成闭环测试；当前没有打开真实原生发送调用。
+- 7.27.50 静态兼容性检查已完成；真实 listener/send/reply 仍待动态验证。
 - 目录重组已经正式提交；旧根目录 Web 文件由 Git 识别为迁移到 `xianyu_web/`，本地重新克隆后根目录、文档入口和 App/Web 工作区均完整。
 
 ## 下一次接手的最短路径
 
-1. 读本文件、`xianyu_app/README.md` 和 `xianyu_app/docs/ROADMAP.md`。
+1. 读本文件、`xianyu_app/docs/APP_UPDATE_7.27.50.md` 和 `xianyu_app/docs/ROADMAP.md`。
 2. 运行 `xianyu_app/tools/snapshot_environment.sh`，确认 App 版本和当前 PID。
 3. 先运行桥回归：`.venv/bin/python -m unittest xianyu_app.bridge.test_bridge -v`。
 4. 系统开发者工具权限准备好后，在可插桩测试副本中运行

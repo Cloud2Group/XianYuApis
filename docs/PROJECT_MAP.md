@@ -59,6 +59,9 @@ XianYuApis/
 | `xianyu_app/research/raw/` | 本机原始研究文件，Git 忽略 |
 | `xianyu_app/docs/` | 逆向、IM 契约、登录态和路线图 |
 
+App 版本兼容性报告：
+[`xianyu_app/docs/APP_UPDATE_7.27.50.md`](../xianyu_app/docs/APP_UPDATE_7.27.50.md)。
+
 常用命令：
 
 ```bash

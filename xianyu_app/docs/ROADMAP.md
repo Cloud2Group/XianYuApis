@@ -11,6 +11,8 @@
 ## Milestone 1：单账号动态确认（当前进行前置准备）
 
 - 准备可插桩测试副本。
+- App 版本更新后先完成静态兼容性检查；7.27.50 检查结果见
+  [`APP_UPDATE_7.27.50.md`](APP_UPDATE_7.27.50.md)。
 - 枚举 `AIMPubMsgListener` 协议和 `AIMPubMsgService` 实例。
 - 手工接收一条消息并记录回调对象字段。
 - 手工发送文字并记录 `appCid`、接收者、扩展字段、localid 和成功/失败回调。

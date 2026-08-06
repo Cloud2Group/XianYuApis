@@ -39,4 +39,21 @@ otool -ov "$BINARY" \
     }
   ' > "$OUTPUT_FILE"
 
+# `otool -ov` output differs slightly between Xcode/macOS releases: some
+# versions append a space to ``layout map`` lines and an extra blank line at
+# EOF.  Normalize those presentation-only differences so version comparisons
+# and Git checks focus on selectors, encodings and fields.
+awk '
+  {
+    sub(/[ \t]+$/, "")
+    lines[NR] = $0
+  }
+  END {
+    last = NR
+    while (last > 0 && lines[last] == "") last--
+    for (i = 1; i <= last; i++) print lines[i]
+  }
+' "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp"
+mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
+
 echo "Objective-C AIM type evidence written to: $OUTPUT_FILE"

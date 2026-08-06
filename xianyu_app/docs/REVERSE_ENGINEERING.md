@@ -1,6 +1,7 @@
 # App 原生逆向与静态分析记录
 
 本文件记录闲鱼 Mac App 当前版本的可复现发现。除非标注“已验证”，其余内容只代表静态表面或工作假设。
+版本更新后的逐项兼容性比较见 [`APP_UPDATE_7.27.50.md`](APP_UPDATE_7.27.50.md)。
 
 ## 目标样本
 
@@ -8,7 +9,8 @@
 | --- | --- |
 | App | `/Applications/闲鱼.app` |
 | Bundle ID | `com.taobao.fleamarket` |
-| 版本 | `7.27.30` |
+| 当前版本 | `7.27.50`（Build `56832643`） |
+| 上一版基线 | `7.27.30`（Build `56437047`） |
 | Runner | `Wrapper/Runner.app/Runner` |
 | 架构 | Apple Silicon arm64 |
 | 技术栈 | Flutter AOT、Objective-C/C++、Alibaba AIM/ACCS、MTop |
@@ -20,13 +22,17 @@
 xianyu_app/tools/extract_static_evidence.sh
 ```
 
-本轮保留的原始反编译输出在本地忽略目录
+上一版反编译输出保留在本地忽略目录
 `xianyu_app/research/raw/xianyu_focus_1785005247/`：
 
 - `Runner.classes`：Objective-C/类和构造器字符串。
 - `Runner.actions`：方法、C++ 符号和调用行为线索。
 - `Runner.mtop`：MTop 名称和账号/业务表面。
 - `Frameworks_App.framework_App.*`：App.framework 的对照分析。
+
+当前版本的公开静态证据由
+`xianyu_app/tools/extract_static_evidence.sh` 重新生成，关键 AIM 类、选择子和
+参数类型编码与 `7.27.30` 基线保持一致；二进制地址随版本重建发生位移，不作为桥接定位依据。
 
 ## AIM/ACCS IM 表面
 
@@ -188,6 +194,8 @@ mtop.taobao.havana.mdevice.delete
 ```
 
 这些名称只证明客户端包含相应能力的字符串或符号；请求结构、签名上下文和账号权限仍需逐项动态确认。
+7.27.50 相比上一版新增 `mtop.idle.user.setting.save`，移除
+`mtop.taobao.idle.fci.get.token`；当前 IM/会话相关名称未见变化。
 
 ## 动态插桩现状
 
